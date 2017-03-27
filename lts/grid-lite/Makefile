@@ -1,19 +1,19 @@
 # 6Harmonics Inc
 # maintainer: Qige Zhao
-# 2017.03.17
+# 2017.03.27
 
 include $(TOPDIR)/rules.mk
 
 APP_NAME:=grid-lite
 PKG_NAME:=grid-lite
-PKG_VERSION:=1.0
-PKG_RELEASE:=1
+PKG_VERSION:=1.1
+PKG_RELEASE:=2
 
 PKG_SOURCE:=$(PKG_NAME)_$(PKG_VERSION)-$(PKG_RELEASE).tar.bz2
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)_$(PKG_VERSION)-$(PKG_RELEASE)
 PKG_SOURCE_URL:=https://github.com/6wilink/grid-lite.git
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=c353a9c2d0eda8c8813716b5f604a4c47b2c858d
+PKG_SOURCE_VERSION:=8adee10dca1e66c50c906ed2cdcad324af0fb3be
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)_$(PKG_VERSION)-$(PKG_RELEASE)
 
