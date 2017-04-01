@@ -1,18 +1,18 @@
 # 6Harmonics Inc
 # maintainer: Qige Zhao
-# 2017.03.17
+# 2017.03.17 - 2017.03.31
 
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=grid-base
 PKG_VERSION:=1.1
-PKG_RELEASE:=1
+PKG_RELEASE:=3
 
 PKG_SOURCE:=$(PKG_NAME)_$(PKG_VERSION)-$(PKG_RELEASE).tar.bz2
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)_$(PKG_VERSION)-$(PKG_RELEASE)
 PKG_SOURCE_URL:=https://github.com/zhaoqige/6w-grid-base.git
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=b1ee0736f1a407eda095db5e2ae895c011cecf30
+PKG_SOURCE_VERSION:=b16a09be76f76daaa85633407d79ad5d243ad983
 PKG_MAINTAINER:=Qige Zhao <qige@6harmonics.com>
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)_$(PKG_VERSION)-$(PKG_RELEASE)

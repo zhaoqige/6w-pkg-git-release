@@ -1,19 +1,20 @@
 # 6Harmonics Inc
 # maintainer: Qige Zhao
-# 2017.03.17
+# 2017.03.27
 
 include $(TOPDIR)/rules.mk
 
 APP_NAME:=grid-lite
 PKG_NAME:=grid-lite_cn
 PKG_VERSION:=1.1
-PKG_RELEASE:=1
+PKG_RELEASE:=3
 
 PKG_SOURCE:=$(PKG_NAME)_$(PKG_VERSION)-$(PKG_RELEASE).tar.bz2
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)_$(PKG_VERSION)-$(PKG_RELEASE)
+#PKG_SOURCE_URL:=https://github.com/6wilink/grid-lite.git
 PKG_SOURCE_URL:=https://github.com/zhaoqige/6w-grid-lite.git
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=667e18d91ea249c67aba567ddae2923efcdc0012
+PKG_SOURCE_VERSION:=63809dc956df1f23638fd3c6a78f88f73abc53b1
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)_$(PKG_VERSION)-$(PKG_RELEASE)
 
@@ -24,15 +25,14 @@ include $(INCLUDE_DIR)/package.mk
 define Package/$(PKG_NAME)
   SECTION:=utils
   CATEGORY:=Utilities
-  TITLE:=GRID lite for GWS Products
-  DEPENDS:=+grid-base +grid-cs
+  TITLE:=GRID Lite for GWS Products
+  DEPENDS:=+uhttpd +lua +liblua +libuci-lua +libiwinfo-lua
   MAINTAINER:=Qige Zhao <zhaoqige@163.com>
 endef
 
 define Package/$(PKG_NAME)/description
-  GRID lite for GWS Products Monitor & Control.
-  Based on Materialize.CSS
-  jQuery.Flot charts.
+  GRID Lite for GWS Products Monitor & Control.
+  Analog Baseband, GWS Radio, System, Network.
 endef
 
 define Package/$(PKG_NAME)/install
