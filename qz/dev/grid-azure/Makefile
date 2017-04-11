@@ -1,19 +1,19 @@
 # 6Harmonics Inc
 # maintainer: Qige Zhao
-# 2017.03.17
+# 2017.03.17 - 2017.04.11
 
 include $(TOPDIR)/rules.mk
 
 APP_NAME:=grid-azure
 PKG_NAME:=grid-azure
 PKG_VERSION:=1.1
-PKG_RELEASE:=1
+PKG_RELEASE:=2
 
 PKG_SOURCE:=$(PKG_NAME)_$(PKG_VERSION)-$(PKG_RELEASE).tar.bz2
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)_$(PKG_VERSION)-$(PKG_RELEASE)
 PKG_SOURCE_URL:=https://github.com/zhaoqige/6w-grid-azure.git
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=01750aa199eb563e50b7052807be655fbec8319d
+PKG_SOURCE_VERSION:=48d98a033e7d4a7f572b2335faf86b9bfd96dfb0
 PKG_MAINTAINER:=Qige Zhao <qige@6harmonics.com>
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)_$(PKG_VERSION)-$(PKG_RELEASE)
